@@ -1,0 +1,22 @@
+{
+  "name": "backit_events",
+  "version": "1.0.0",
+  "description": "Encode/Decode Server Events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyNova/backit_events.git"
+  },
+  "keywords": [
+    "events"
+  ],
+  "author": "Britton Mathews <britton.mathews@backit.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinyNova/backit_events/issues"
+  },
+  "homepage": "https://github.com/TinyNova/backit_events#readme"
+}
