@@ -15,6 +15,15 @@ class Event {
         });
     }
 
+    toObject() {
+        return {
+            service: this._service,
+            type: this._type,
+            payload: this._payload,
+            eventTs: this._eventTs
+        };
+    }
+
     set service (service) {
         this._service = service;
     }
