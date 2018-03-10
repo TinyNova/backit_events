@@ -1,9 +1,12 @@
+const uuid = require('uuid');
+
 class Event {
-    constructor ({ service, type, payload, eventTs }) {
+    constructor ({ service, type, payload, eventTs, eventId }) {
         this._service = service;
         this._type = type;
         this._payload = payload;
         this._eventTs = eventTs || Date.now();
+        this._eventId = eventId || uuid.v4();
     }
 
     toString() {
@@ -11,7 +14,8 @@ class Event {
             service: this._service,
             type: this._type,
             payload: this._payload,
-            eventTs: this._eventTs
+            eventTs: this._eventTs,
+            eventId: this._eventId
         });
     }
 
@@ -20,7 +24,8 @@ class Event {
             service: this._service,
             type: this._type,
             payload: this._payload,
-            eventTs: this._eventTs
+            eventTs: this._eventTs,
+            eventId: this._eventId
         };
     }
 
@@ -40,6 +45,10 @@ class Event {
         this._eventTs = eventTs;
     }
 
+    set eventId (eventId) {
+        this._eventId = eventId;
+    }
+
     get service () {
         return this._service;
     }
@@ -54,6 +63,10 @@ class Event {
 
     get eventTs () {
         return this._eventTs;
+    }
+
+    get eventId () {
+        return this._eventId;
     }
 }
 

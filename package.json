@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/TinyNova/backit_events/issues"
   },
-  "homepage": "https://github.com/TinyNova/backit_events#readme"
+  "homepage": "https://github.com/TinyNova/backit_events#readme",
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
 }
